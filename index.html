@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=0">
+        <title>Calculadora IMC</title>
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="https://luizfelipe9627.github.io/calculadora-imc/css/style.css">
+    </head>
+
+    <body>
+        <div class="titulo-imc">Calculadora IMC</div>
+        
+       <div class="container-calculadora">
+            <div class="section-imc">
+
+                <div class="content-text">
+                    NOME 
+                    <input type="text" class="nome" placeholder="Escreva aqui...">
+                </div>
+
+                <div class="content-text">
+                    ALTURA 
+                    <input type="number" class="altura" placeholder="Escreva aqui...">
+                </div>
+
+                <div class="content-text">
+                    PESO
+                    <input type="number" class="peso" placeholder="Escreva aqui...">
+                </div>
+
+                <button onclick="calcularPeso()" value="">Calcular</button>
+
+                <div class="resultado-final"></div>
+            </div>
+
+           <div class="section-desc">
+               <div class="content-desc-imc">
+                   <div class="titulo-desc">Seu resultado é ↴</div>
+                    <div class="text-desc">
+                        <div class="bolinha azul"></div>
+                        Menos que 18,5 peso abaixo do normal.
+                    </div>
+
+                    <div class="text-desc">
+                        <div class="bolinha verde"></div>
+                        Entre 18,5 e 24,9 peso normal.
+                    </div>
+
+                    <div class="text-desc">
+                        <div class="bolinha amarelo"></div>
+                        Entre 25 e 29,9 sobrepeso.
+                    </div>
+
+                    <div class="text-desc">
+                        <div class="bolinha laranja"></div>
+                        Entre 30 e 34,9 obesidade 1º grau.
+                    </div>
+
+                    <div class="text-desc">
+                        <div class="bolinha vermelho"></div>
+                        Entre 35 e 39,9 obesidade 2º grau.
+                    </div>
+
+                    <div class="text-desc">
+                        <div class="bolinha vinho"></div>
+                        Mais do que 40 obesidade 3º grau.
+                    </div>
+               </div>
+           </div>
+       </div>
+
+        <script src="https://luizfelipe9627.github.io/calculadora-imc/js/script.js"></script>
+    </body>
+</html>

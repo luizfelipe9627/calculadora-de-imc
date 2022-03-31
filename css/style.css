@@ -192,5 +192,7 @@ button:hover {
         margin-right: 0;
     }
 
-
+    .resultado-final {
+        padding: 20px;
+    }
 }

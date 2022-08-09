@@ -1,0 +1,58 @@
+#container-calculadora {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1.875rem;
+}
+
+#titulo-imc {
+  text-align: center;
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #EEEEEE;
+  margin: 10vh 0rem 1.25rem 0rem;
+}
+
+#section-imc, #section-desc {
+  width: 18.75rem;
+  border-radius: 0.625rem;
+  background-color: #EEEEEE;
+  padding: 0.3125rem 1.25rem 1.25rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.asterisco {
+  color: #FF0000;
+}
+
+.aviso {
+  background-color: #FF0000;
+  border-radius: 0.3125rem;
+  padding: 0.125rem;
+  width: 100%;
+  font-weight: bold;
+  height: auto;
+  font-size: 0.8125rem;
+  color: #FFF;
+}
+
+#resultado-final {
+  display: none;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  background-color: #393E46;
+  color: #FFF;
+  border-radius: 0.3125rem;
+  margin-top: 1.25rem;
+}
+
+#imc, #faixa {
+  font-size: 0.9375rem;
+  margin: 0.625rem 1.25rem;
+}
+
+#negritoIMC, #negritoFaixa {
+  font-weight: bold;
+}

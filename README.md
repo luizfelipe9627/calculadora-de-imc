@@ -1,7 +1,7 @@
 # Calculadora de IMC
 ![Badge](http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge)             
 
-<img src="https://github.com/luizfelipe9627/calculadora-imc/blob/main/assets/image/calculadora-de-imc.gif" alt="Apresentação da Calculadora IMC">
+<img src="https://github.com/luizfelipe9627/calculadora-de-imc/blob/master/assets/image/calcuradora-de-imc.gif" alt="Apresentação da Calculadora IMC">
 
 ## 📄 Descrição
 O IMC é reconhecido como padrão internacional para avaliar o grau de sobrepeso e obesidade. É calculado dividindo o peso (em kg) pela altura ao quadrado (em metros).

@@ -7,7 +7,7 @@
 O IMC é reconhecido como padrão internacional para avaliar o grau de sobrepeso e obesidade. É calculado dividindo o peso (em kg) pela altura ao quadrado (em metros).
 
 ## 📑 Observação
-Criei esse mini projeto no intuito de aprimorar e práticar meus conhecimentos em relação ao Javascript.
+Criei esse mini projeto no intuito de aprimorar e praticar meus conhecimentos em relação ao Javascript.
 
 ### <a href="https://luizfelipe9627-calculadora-de-imc.netlify.app">Acesse o site</a>
 

@@ -5,11 +5,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Calculadora de IMC</title>
-        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/style.min.css" />
     </head>
 
     <body>
-       <div id="container">
+        <div id="container">
             <div id="titulo-imc">Calculadora de IMC</div>
 
             <div class="container-calculadora">
@@ -17,32 +17,32 @@
                     <label class="content-text">
                         ALTURA
                         <span class="asterisco">*</span>
-                        <input type="number" id="altura" lang="pt" step="0.1" placeholder="Digite sua altura">
+                        <input type="number" id="altura"  max="3" lang="pt" step="0.1" placeholder="Ex.: 1.62                    (m)">
                     </label>
                     <span id="aviso1"></span>
     
                     <label class="content-text">
                         PESO
                         <span class="asterisco">*</span>
-                        <input type="number" id="peso" placeholder="Digite seu peso" lang="pt" step="0.1">
+                        <input type="number" id="peso" placeholder="Ex.: 55.60                       (kg)" lang="pt" step="0.1">
                     </label>
                     <span id="aviso2"></span>
-    
-                    <button id="calculo">Calcular</button>
+                    
+                    <div id="botoes">
+                        <button id="calculo">Calcular</button>
+                        <button type="reset" id="limpar">Limpar</button>
+                    </div>
+                    
                 </form>
     
                 <div id="resultado-final">
                     <div id="content-resultado">
-                        <p id="imc">O IMC dos seus dados é ⇢ <span id="negritoIMC"></span></p>
-                        <p id="faixa">Este valor considera que você está na faixa ⇢ <span id="negritoFaixa"></span></p>
+                        <p id="imc"></p>
+                        <p id="faixa"></p>
                     </div>
                 </div>
             </div>
-            
-            <div id="section-button">
-                <button id="button">Mostrar exemplo</button>
-            </div>
-
+        </div>
         <script src="./assets/js/script.min.js"></script>
     </body>
 </html>

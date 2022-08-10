@@ -63,20 +63,7 @@
   font-weight: bold;
 }
 
-#section-button {
+#botoes {
   display: flex;
-  justify-content: center;
-  margin-top: 1.25rem;
-  background-color: #EEEEEE;
-  border-radius: 0.625rem;
-}
-
-#button {
-  background-color: #393E46;
-  margin: 0.9375rem;
-}
-
-#button:hover {
-  background-color: #4e545f;
-  border-radius: 0.625rem 0.3125rem;
+  justify-content: space-around;
 }

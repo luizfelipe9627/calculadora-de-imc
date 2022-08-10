@@ -1,27 +1,39 @@
-// Responsável por selecionar o botão de calculo do HTML.
+// Responsável por selecionar os botões do HTML.
 let calculando = document.querySelector('#calculo');
-
-// Responsável por selecionar o container de mostrar exemplo.
-let botaoInstrucoes = document.querySelector('#section-button');
+let limpar = document.querySelector('#limpar');
 
 // Responsável por selecionar os avisos do HTML.
-
 let alturaAlerta = document.querySelector('#aviso1');
 let pesoAlerta = document.querySelector('#aviso2');
 
-// Responsável por puxar a parte de resultado do HTML.
+// Responsável por puxar a DIV de resultado do HTML.
 let resultadoFinal = document.querySelector('#resultado-final');
-let negritoIMC = document.querySelector('#negritoIMC');
-let negritoFaixa = document.querySelector('#negritoFaixa');
+
+// Responsável por selecionar a DIV imc e faixa.
+let imc = document.querySelector('#imc');
+let faixa = document.querySelector('#faixa');
 
 // Responsável por puxar os inputs de altura e peso do HTML.
 let inputAltura = document.querySelector('#altura');
 let inputPeso = document.querySelector('#peso');
 
-// Irá mostrar um exemplo de como funciona a calculadora de IMC.
-botaoInstrucoes.addEventListener('click', () => {
-    alert('Exemplo:\n\nAltura ⇢ 1.60 ou 1,60\nPeso ⇢ 65.50 ou 65,50\nResultado IMC ⇢ 25.59\n\nObs.: Para ter sucesso no cálculo, você deve colocar sua altura(m) e seu peso(kg) com os devidos caracteres: ponto final(".") ou virgula(",").');
-});
+// Está definindo o texto da classe IMC.
+imc.textContent += 'O IMC dos seus dados é ⇢ ';
+// Está criando um SPAN e armazenando na variável negritoIMC.
+let negritoIMC = document.createElement('span');
+// Está atribuindo ao negritoIMC um ID chamado como negritoIMC.
+negritoIMC.setAttribute('id', 'negritoIMC')
+// Está fazendo o IMC virar pai do negritoIMC.
+imc.appendChild(negritoIMC)
+
+// Está definindo o texto da classe Faixa.
+faixa.textContent += 'Este valor considera que você está na faixa ⇢ ';
+// Está criando um SPAN e armazenando na variável negritoFaixa.
+let negritoFaixa = document.createElement('span');
+// Está atribuindo ao negritoIMC um ID chamado como negritoIMC.
+negritoFaixa.setAttribute('id', 'negritoFaixa')
+// Está fazendo o Faixa virar pai do negritoFaixa.
+faixa.appendChild(negritoFaixa);
 
 calculando.addEventListener('click', (e) => {
     // Usado para impedir que envie o formulário.
@@ -73,27 +85,44 @@ calculando.addEventListener('click', (e) => {
     // Está dividindo o valor do peso e da altura.
     let calculoFinal = valorPeso / valorAltura;
     // Mostra o resultado final em baixo do botão de calcular.
-    negritoIMC.innerHTML = calculoFinal.toFixed(2);
-
-    // Irá fazer o container de exemplo sumir.
-    botaoInstrucoes.style.display = 'none';
+ 
     // Irá fazer o container de resultado aparecer.
     resultadoFinal.style.display = 'flex';
 
+    // Está armazenando o resultado no SPAN negritoIMC dentro do pai IMC.
+    negritoIMC.textContent = calculoFinal.toFixed(2);
+
     // Responsável pelas condições faixas de pesos.
-    if(calculoFinal <= 16 && calculoFinal <= 16.90) {
-        negritoFaixa.innerHTML = 'Muito abaixo do peso';
+    if(calculoFinal <= 10) {
+        alert('Preencha os campos corretamente.');
+        // Irá fazer o container de resultado desaparecer.
+        resultadoFinal.style.display = 'none';
+    } else if(calculoFinal <= 16 && calculoFinal <= 16.90) {
+        negritoFaixa.textContent = 'Muito abaixo do peso';
     } else if(calculoFinal >= 17 &&calculoFinal <= 18.40) {
-        negritoFaixa.innerHTML = 'Abaixo do peso';
+        negritoFaixa.textContent = 'Abaixo do peso';
     } else if(calculoFinal >= 18.5 && calculoFinal <= 24.90) {
-        negritoFaixa.innerHTML = 'Peso normal';
+        negritoFaixa.textContent = 'Peso normal';
     } else if(calculoFinal >= 25 && calculoFinal <= 29.90 ) {
-        negritoFaixa.innerHTML = 'Acima do peso';
+        negritoFaixa.textContent = 'Acima do peso';
     } else if(calculoFinal >= 30 && calculoFinal <= 34.90) {
-        negritoFaixa.innerHTML = 'Obesidade grau I';
+        negritoFaixa.textContent = 'Obesidade grau I';
     } else if(calculoFinal >= 35 && calculoFinal <= 40) {
-        negritoFaixa.innerHTML = 'Obesidade grau II';
+        negritoFaixa.textContent = 'Obesidade grau II';
     } else if(calculoFinal > 40) {
-        negritoFaixa.innerHTML = 'Obesidade grau III';
+        negritoFaixa.textContent = 'Obesidade grau III';
     }
 });
+
+limpar.addEventListener('click', () => {
+    // Irá fazer o container de resultado desaparecer.
+    resultadoFinal.style.display = 'none';
+});
+
+   
+
+    
+
+    
+
+    

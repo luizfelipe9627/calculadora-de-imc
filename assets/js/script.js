@@ -20,7 +20,7 @@ let inputPeso = document.querySelector('#peso');
 
 // Irá mostrar um exemplo de como funciona a calculadora de IMC.
 botaoInstrucoes.addEventListener('click', () => {
-    alert('Exemplo:\n\nAltura ⇢ 1.60 ou 1,60\nPeso ⇢ 65.50 ou 65,50\nResultado IMC ⇢ 25.59\n\nObs.: Para ter sucesso no cálculo, você deve colocar sua altura(cm) seu peso(kg) com os devidos caracteres: ponto final(".") ou virgula(",").');
+    alert('Exemplo:\n\nAltura ⇢ 1.60 ou 1,60\nPeso ⇢ 65.50 ou 65,50\nResultado IMC ⇢ 25.59\n\nObs.: Para ter sucesso no cálculo, você deve colocar sua altura(cm) e seu peso(kg) com os devidos caracteres: ponto final(".") ou virgula(",").');
 });
 
 calculando.addEventListener('click', (e) => {

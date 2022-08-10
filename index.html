@@ -14,24 +14,33 @@
 
             <form id="section-imc">
                 <label class="content-text">
-                    ALTURA<span class="asterisco">*</span>
-                    <input type="number" id="altura" placeholder="Digite sua altura" lang="pt" step="0.01">
+                    ALTURA
+                    <span class="asterisco">*</span>
+                    <input type="number" id="altura" lang="pt" step="0.1" placeholder="Digite sua altura">
                 </label>
                 <span id="aviso1"></span>
 
                 <label class="content-text">
-                    PESO<span class="asterisco">*</span>
-                    <input type="number" id="peso" placeholder="Digite seu peso" lang="pt" step="0.01">
+                    PESO
+                    <span class="asterisco">*</span>
+                    <input type="number" id="peso" placeholder="Digite seu peso" lang="pt" step="0.1">
                 </label>
                 <span id="aviso2"></span>
 
-                <button>Calcular</button>
-                
-                <div id="resultado-final">
-                    <p id="imc">O IMC desses dados é ⇢ <span id="negritoIMC"></span></p>
+                <button id="calculo">Calcular</button>
+            </form>
+
+            <div id="resultado-final">
+                <div id="content-resultado">
+                    <p id="imc">O IMC dos seus dados é ⇢ <span id="negritoIMC"></span></p>
                     <p id="faixa">Este valor considera que você está na faixa ⇢ <span id="negritoFaixa"></span></p>
                 </div>
-            </form>
+            </div>
+
+            <div id="section-button">
+                <button id="button">Mostrar exemplo</button>
+            </div>
+
         <script src="./assets/js/script.min.js"></script>
     </body>
 </html>

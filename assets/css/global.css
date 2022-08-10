@@ -3,7 +3,11 @@
 }
 
 body {
-  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 1.25rem;
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: #222831;
@@ -28,7 +32,9 @@ input {
   margin-left: 1.25rem;
   border: none;
   padding: 0.625rem;
-  background-color: #d1d1e9;
+  background-color: #00ADB5;
+  color: #FFF;
+  font-weight: bold;
 }
 
 button {
@@ -38,7 +44,6 @@ button {
   width: 100%;
   border-radius: 0.3125rem 0.625rem;
   border: none;
-  box-shadow: #222831 0.3125rem 0.3125rem 0.4375rem;
   background-color: #00ADB5;
   color: #FFF;
   font-weight: bold;
@@ -48,5 +53,13 @@ button {
 
 button:hover {
   background-color: #00c3ce;
+  border-radius: 10px 5px;
+  transition: 0.5s all linear;
+  box-shadow: #222831 0.3125rem 0.3125rem 0.4375rem;
+}
+
+::placeholder {
+  color: #FFF;
+  font-weight: bold;
 }
 

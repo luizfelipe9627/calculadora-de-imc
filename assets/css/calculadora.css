@@ -2,19 +2,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 1.875rem;
 }
 
 #titulo-imc {
-  text-align: center;
   font-size: 1.875rem;
   font-weight: bold;
   color: #EEEEEE;
-  margin: 10vh 0rem 1.25rem 0rem;
+  margin-bottom: 1.25rem;
 }
 
 #section-imc, #section-desc {
-  width: 18.75rem;
+  width: 19.5625rem;
   border-radius: 0.625rem;
   background-color: #EEEEEE;
   padding: 0.3125rem 1.25rem 1.25rem 1.25rem;
@@ -24,28 +22,35 @@
 
 .asterisco {
   color: #FF0000;
+  width: 0;
 }
 
 .aviso {
   background-color: #FF0000;
   border-radius: 0.3125rem;
-  padding: 0.125rem;
+  padding: 0.3125rem;
   width: 100%;
   font-weight: bold;
-  height: auto;
+  text-align: center;
   font-size: 0.8125rem;
   color: #FFF;
 }
 
 #resultado-final {
   display: none;
+  border-radius: 0.625rem;
+  padding: 1.25rem;
   flex-direction: column;
-  height: auto;
-  width: 100%;
-  background-color: #393E46;
+  background-color: #EEEEEE;
   color: #FFF;
-  border-radius: 0.3125rem;
   margin-top: 1.25rem;
+}
+
+#content-resultado {
+  width: 17.0625rem;
+  padding: 0.625rem 0rem;
+  background-color: #393E46;
+  border-radius: 0.3125rem 0.625rem;
 }
 
 #imc, #faixa {
@@ -55,4 +60,22 @@
 
 #negritoIMC, #negritoFaixa {
   font-weight: bold;
+}
+
+#section-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  background-color: #EEEEEE;
+  border-radius: 0.625rem;
+}
+
+#button {
+  background-color: #393E46;
+  margin: 20px;
+}
+
+#button:hover {
+  background-color: #4e545f;
+  border-radius: 10px 5px;
 }

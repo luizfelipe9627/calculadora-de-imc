@@ -65,17 +65,17 @@
 #section-button {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 1.25rem;
   background-color: #EEEEEE;
   border-radius: 0.625rem;
 }
 
 #button {
   background-color: #393E46;
-  margin: 20px;
+  margin: 0.9375rem;
 }
 
 #button:hover {
   background-color: #4e545f;
-  border-radius: 10px 5px;
+  border-radius: 0.625rem 0.3125rem;
 }

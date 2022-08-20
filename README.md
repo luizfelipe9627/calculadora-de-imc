@@ -1,15 +1,15 @@
 # Calculadora de IMC
 ![Badge](http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge)             
 
-<img src="https://github.com/luizfelipe9627/calculadora-de-imc/blob/master/assets/image/calculadora-de-imc.gif" alt="Apresentação da Calculadora de IMC">
+<img src="https://github.com/luizfelipe9627/super-mario/blob/main/assets/image/super-mario.gif" alt="Apresentação do Super Mario">
 
 ## 📄 Descrição
-O IMC é reconhecido como padrão internacional para avaliar o grau de sobrepeso e obesidade. É calculado dividindo o peso (em kg) pela altura ao quadrado (em metros).
+Super Mario é uma série de jogos eletrônicos de plataforma, criada pela Nintendo, baseada e estrelada pelo encanador fictício Mario.
 
 ## 📑 Observação
-Criei esse mini projeto no intuito de aprimorar e praticar meus conhecimentos em relação ao Javascript.
+Projeto feito junto a Tech Academy da StartSe para práticar o conhecimento aprendido em aula sobre JavaScript. Me desafiei a criar a tela inicial e colocar as músicas, fiz algumas modificações no codigo e deixei ao meu gosto.
 
-### <a href="https://luizfelipe9627-calculadora-de-imc.netlify.app">Acesse o site</a>
+### <a href="https://luizfelipe9627-super-mario.netlify.app">Acesse o site</a>
 
 ## 💻 Tecnologias utilizadas
 
